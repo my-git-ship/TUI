@@ -23,6 +23,19 @@ choice=input("Enter your choice : ")
 
 if int(choice) == 1:
 	os.system("date")
+	
+elif int(choice) == 2:
+	os.system("cal")
+elif int(choice) == 3:
+	os.system("history")
+elif int(choice) == 4:
+	os.system("ls")
+elif int(choice) == 5:
+	os.system("ls -al")
+elif int(choice) == 6:
+	os.system("whoami")
+
+	
 else:
 	print("Option not supported , try for the next option")
 	
