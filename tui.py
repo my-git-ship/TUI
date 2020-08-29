@@ -12,7 +12,7 @@ os.system("tput setaf 1")
 
 print("""press 1 : TO see the date
 press 2 : To see the calander
-press 3 : To see the history
+press 3 : To see the IPAdderss
 press 4 : To see the list of files and directories
 press 5 : To see the details of files and directories
 press 6 : To see the current user
@@ -29,7 +29,7 @@ if int(choice) == 1:
 elif int(choice) == 2:
 	os.system("cal")
 elif int(choice) == 3:
-	os.system("history")
+	os.system("hostname -I")
 elif int(choice) == 4:
 	os.system("ls")
 elif int(choice) == 5:
