@@ -40,14 +40,15 @@ elif int(choice) == 6:
 elif int(choice) == 7:
 	useradd = input("Inter username : ")
 	os.system("useradd {}".format(useradd))
-elif int(choice) == 8:
-        username = input("Inter password for the existing user : ")
-        os.system("passwd {}".format(username))
-elif int(choice) == 9:
-        filename = input("Inter file name : ")
-        os.system("touch {}".format(filename))
+	os.system("passwd {}".format(useradd))
 
-	
+elif int(choice) == 8:
+	username = input("Inter password for the existing user : ")
+	os.system("passwd {}".format(username))
+elif int(choice) == 9:
+	filename = input("Inter file name : ")
+	os.system("touch {}".format(filename))
+
+
 else:
 	print("Option not supported , try for the next option")
-	
