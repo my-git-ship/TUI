@@ -19,6 +19,7 @@ press 6 : To see the current user
 press 7 : To add user and assign password
 press 8 : To create a directory
 press 9 : To create an empty file
+press 10 : To update the system
 """)
 
 os.system("tput setaf 7")
@@ -47,6 +48,8 @@ elif int(choice) == 8:
 elif int(choice) == 9:
 	filename = input("Inter file name : ")
 	os.system("touch {}".format(filename))
+elif int(choice) == 10:
+	os.system("sudo apt update -y")
 
 
 else:
