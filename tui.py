@@ -16,8 +16,8 @@ press 3 : To see the IPAdderss
 press 4 : To see the list of files and directories
 press 5 : To see the details of files and directories
 press 6 : To see the current user
-press 7 : To add user
-press 8 : To give password for the existing user
+press 7 : To add user and assign password
+press 8 : To create a directory
 press 9 : To create an empty file
 """)
 
@@ -41,10 +41,9 @@ elif int(choice) == 7:
 	useradd = input("Inter username : ")
 	os.system("useradd {}".format(useradd))
 	os.system("passwd {}".format(useradd))
-
 elif int(choice) == 8:
-	username = input("Inter password for the existing user : ")
-	os.system("passwd {}".format(username))
+	directoryname = input("Inter directory name : ")
+	os.system("mkdir {}".format(directoryname))
 elif int(choice) == 9:
 	filename = input("Inter file name : ")
 	os.system("touch {}".format(filename))
