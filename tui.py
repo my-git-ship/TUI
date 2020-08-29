@@ -15,6 +15,9 @@ press 2 : To see the calander
 press 3 : To see the history
 press 4 : To see the list of files and directories
 press 5 : To see the details of files and directories
+press 6 : To see the current user
+press 7 : To add user
+press 8 : To give password for the existing user
 """)
 
 os.system("tput setaf 7")
@@ -23,7 +26,6 @@ choice=input("Enter your choice : ")
 
 if int(choice) == 1:
 	os.system("date")
-	
 elif int(choice) == 2:
 	os.system("cal")
 elif int(choice) == 3:
@@ -34,6 +36,12 @@ elif int(choice) == 5:
 	os.system("ls -al")
 elif int(choice) == 6:
 	os.system("whoami")
+elif int(choice) == 7:
+	useradd = input("Inter username : ")
+	os.system("useradd {}".format(useradd))
+elif int(choice) == 8:
+        username = input("Inter password for the existing user : ")
+        os.system("passwd {}".format(username))
 
 	
 else:
